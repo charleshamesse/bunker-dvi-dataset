@@ -19,9 +19,10 @@ layout: home
 
 We provide a survey-grade ground truth map collected with a FARO Focus laser scanner in PCD format. Two versions are available:
 
-- map_gt.pcd: full map weighing 6.5GB.
+- map_gt.pcd: full map featuring 336M points and weighing 5.4GB
 - map_gt_light.pcd: downsampled map weighing 200MB.
-
+- 
+ You can download the original scans via the links in the Download section and use e.g. [CloudCompare] to read the files.
 
 ## Localization
 
@@ -33,3 +34,5 @@ Then, we use the extrinsic calibration of the sensors to compute the trajectorie
 - trajectory_7s.csv
 - trajectory_k4a.csv
 - trajectory_d455f.csv
+
+[CloudCompare]: https://www.cloudcompare.org/release/index.html

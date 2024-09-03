@@ -8,7 +8,7 @@ nav_order: 1
 
 ---
 
-![Image](/assets/images/screenshot-0.jpg)
+![Image](assets/images/screenshot-0.jpg)
 
 *Illustration of some of the sensor data recorded in this dataset.*
 
