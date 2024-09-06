@@ -15,14 +15,18 @@ layout: home
 
 ---
 
+![Image](../assets/images/faro-focus-3d.jpg){: style="float: right; margin-left: 1em" width="33%"}
+
 ## Mapping
+
+
 
 We provide a survey-grade ground truth map collected with a FARO Focus laser scanner in PCD format. Two versions are available:
 
 - map_gt.pcd: full map featuring 336M points and weighing 5.4GB
 - map_gt_light.pcd: downsampled map weighing 200MB.
-- 
- You can download the original scans via the links in the Download section and use e.g. [CloudCompare] to read the files.
+
+You can download the original scans via the links in the Download section and use e.g. [CloudCompare] to read the files.
 
 ## Localization
 
@@ -35,4 +39,9 @@ Then, we use the extrinsic calibration of the sensors to compute the trajectorie
 - trajectory_k4a.csv
 - trajectory_d455f.csv
 
+![Image](../assets/images/scan_in_map_gt.jpg)
+*Ongoing registration of the Livox Mid-360 de-skewed scans (red) in the ground truth map*
+
+
 [CloudCompare]: https://www.cloudcompare.org/release/index.html
+

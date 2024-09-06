@@ -8,7 +8,8 @@ nav_order: 1
 
 ---
 
-![Image](assets/images/screenshot-0.jpg)
+![Image](assets/images/whole-map-alt.jpg)
+![Image](assets/images/rig-sample.jpg)
 
 *Illustration of some of the sensor data recorded in this dataset.*
 

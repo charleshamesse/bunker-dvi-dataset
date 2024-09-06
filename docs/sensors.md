@@ -18,6 +18,8 @@ layout: home
 ## Sensor rig
 
 
+![Image](../assets/images/dvi-rig.jpg){: style="float: left; margin-right: 1em" width="33%" m}
+
 Our 3D-printed hand-held setup features the following sensors:
 - [Sevensense Core Research]
 - [Intel Realsense D455F]
