@@ -59,9 +59,23 @@ All image topics are compressed with the standard `image_transport` and `depth_i
 
 ## Calibration
 
+We distinguish intra-device calibration (camera intrinsics and camera-IMU extrinsics for all cameras of a single hardware device) and inter-device calibration (extrinsics relating one device's sensor to another, be it LiDAR or camera). All calibration data is provided in the form of text and yaml files.
+
+- For intra-device calibration (camera intrinsics and camera-IMU extrinsics for a single hardware device), we rely on factory calibration data and the [Kalibr] toolbox. 
+  - k4a_calibration.txt
+  - 7s_sensor_calibration.yaml
+  - d455f_calibration.yaml
+- For inter-device calibration, we use the target-less [LiDAR-camera calibration toolbox] developed by [Koide et al. (ICRA2023)] and compute the transformation of each camera to the LiDAR's coordinate frame.
+  - inter-device_extrinsics.yaml
+
+
 
 [Sevensense Core Research]: https://www.sevensense.ai/product/core-research
 [Intel Realsense D455F]: https://www.intelrealsense.com/depth-camera-d455f/
 [Microsoft Kinect for Azure]: https://learn.microsoft.com/en-us/previous-versions/azure/kinect-dk/
 [Livox Mid-360]: https://www.livoxtech.com/mid-360
 [ASUS NUC 13 Pro NUC13ANHi7]: https://www.asus.com/displays-desktops/nucs/nuc-mini-pcs/asus-nuc-13-pro/
+
+[Kalibr]: https://github.com/ethz-asl/kalibr
+[LiDAR-camera calibration toolbox]: https://github.com/koide3/direct_visual_lidar_calibration
+[Koide et al. (ICRA2023)]: https://staff.aist.go.jp/k.koide/assets/pdf/icra2023.pdf

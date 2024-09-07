@@ -24,7 +24,7 @@ We have collected three types of sequences, for calibration, quick testing and a
 
 Both calibration sequences are captured in the same room, illustrated in the figure below:
 
-![Image](/assets/images/screenshot-calibration.jpg)
+![Image](../assets/images/screenshot-calibration.jpg)
 
 
 ## Warm-up sequences
@@ -36,9 +36,12 @@ We propose two short sequences for researches wanting to have a quick glance at 
 
 The large room is shown in the following figure:
 
-![Image](/assets/images/screenshot-warm-up.jpg)
+![Image](../assets/images/screenshot-warm-up.jpg)
 
 ## Evaluation sequences
+
+![Image](../assets/images/dvi-dataset-trajectories.jpg)
+*The four evaluation sequences. Top, red: easy. Top, blue: medium. Bottom, teal: difficult. Bottom, green: extreme.*
 
 These sequences are the ones used in the actual evaluation of algorithms. We propose four variants:
 
