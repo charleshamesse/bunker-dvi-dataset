@@ -14,16 +14,19 @@ nav_order: 1
 
 
 ## About 
-This site presents the dataset collected for our ongoing research on portable 3D mapping systems based on depth cameras. The dataset has an extensive set of sensors:
+This site presents the dataset collected for our ongoing research on portable 3D mapping systems based on depth cameras. Targeting resource and time-constrained mapping operations (e.g. in the context of search-and-rescue), our sequences we include agressive motion, sequences with people moving in the field of view of the sensors as well as sequences with abrupt lighting changes.
+
+Our sensor platform has an extensive set of sensors:
 - 3D LiDAR
 - Active stereo camera
 - Passive stereo camera
 - Time-of-flight camera
 - Multiple Inertial Measurement Units (IMUs)
 
-The aim is to compare the performance of the various depth sensing modalities for the task of 3D reconstruction in a challenging, large-scale environment. This environment aims to resemble a typical search-and-rescue operation site and is captured in a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
+With this selection of sensors, our dataset allows the comparison of various depth sensing modalities for the task of 3D reconstruction in a challenging, large-scale environment. This environment aims to resemble a typical search-and-rescue operation site and is captured in a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
 
-To better match the reality of search-and-rescue operations, we include sequences with people moving in front of the sensor rig as well as sequences with severe lighting changes.
+To provide 
+
 
 
 ## Authors 
