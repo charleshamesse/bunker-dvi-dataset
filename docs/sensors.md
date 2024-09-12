@@ -65,7 +65,7 @@ We distinguish intra-device calibration (camera intrinsics and camera-IMU extrin
   - k4a_calibration.txt
   - 7s_sensor_calibration.yaml
   - d455f_calibration.yaml
-- For inter-device calibration, we use the target-less [LiDAR-camera calibration toolbox] developed by [Koide et al. (ICRA2023)] and compute the transformation of each camera to the LiDAR's coordinate frame.
+- For inter-device calibration, we use the target-less [LiDAR-camera calibration toolbox] proposed in [Koide et al. (ICRA2023)] and compute the transformation of each device's IMU to the LiDAR's coordinate frame. Users can then compute whichever transformation between all sensors of the platform.
   - inter-device_extrinsics.yaml
 
 

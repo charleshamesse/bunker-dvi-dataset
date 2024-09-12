@@ -23,9 +23,7 @@ Our sensor platform has an extensive set of sensors:
 - Time-of-flight camera
 - Multiple Inertial Measurement Units (IMUs)
 
-With this selection of sensors, our dataset allows the comparison of various depth sensing modalities for the task of 3D reconstruction in a challenging, large-scale environment. This environment aims to resemble a typical search-and-rescue operation site and is captured in a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
-
-To provide 
+With this selection of sensors, our dataset allows the comparison of various depth sensing modalities !173for the task of 3D reconstruction in a challenging, large-scale environment. This environment aims to resemble a typical search-and-rescue operation site and is captured in a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
 
 
 

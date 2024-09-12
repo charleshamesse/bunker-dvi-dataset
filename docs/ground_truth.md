@@ -35,7 +35,7 @@ You can download the original scans via the links in the Download section and us
 Following the procedure used in other SLAM datasets (MCD-VIRAL, Newer College dataset), we compute ground truth localization by registering the Livox Mid-360's point clouds to the ground truth map. We do so after de-skewing and transforming in the coordinate frame of the IMU:
 - trajectory_mid360.csv
 
-Then, we use the extrinsic calibration of the sensors to compute the trajectories of each vision sensor:
+Then, we use the extrinsic calibration of the sensors to compute the trajectories of each depth camera:
 
 - trajectory_7s.csv
 - trajectory_k4a.csv
@@ -51,6 +51,9 @@ The csv files are in [TUM format], i.e. `timestamp, x, y, z, qx, qy, qz, qw`:
 1725010555.3002715 44.1915069783180 -7.47244809864874 -0.3459356312609733 -0.1184078006989503 -0.07139376452948795 0.869012047629454 -0.47507955570180843
 ```
 
+These poses follow the rate of the LiDAR scans, i.e. 10 Hz. For advanced users, we also propose SE3 B-spline trajectories using the [Ceva library], similarly to the recent [MCD Viral dataset]. The file lists the control points of the splines.
+
+
 
 
 ![Image](../assets/images/scan_in_map_gt.jpg)
@@ -60,3 +63,7 @@ The csv files are in [TUM format], i.e. `timestamp, x, y, z, qx, qy, qz, qw`:
 [CloudCompare]: https://www.cloudcompare.org/release/index.html
 
 [TUM format]: https://github.com/MichaelGrupp/evo/wiki/Formats#tum---tum-rgb-d-dataset-trajectory-format
+
+[MCD Viral dataset]: https://mcdviral.github.io/Groundtruth.html
+
+[Ceva library]: https://github.com/mcdviral/ceva
