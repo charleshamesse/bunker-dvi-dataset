@@ -54,7 +54,7 @@ Middle: teal: Deg-Vis-1, green: Deg-Vis-2 \
 Bottom: light blue: Deg-Geo-1, orange: Deg-Geo-2*
 
 
-These sequences are the ones used for the actual evaluation of algorithms. We propose two *regular* sequences (*Reg-\**), two sequences with degenerate visual features (dynamic scenes and lights turned off and on, *Deg-Vis-\**), and two sequences with degenerate geometrical features (recording only the ground plane or a wall, *Deg-Geo-\**).
+These sequences are the ones used for the actual evaluation of algorithms. We propose two regular sequences (decent lighting and stable features, *Reg-\**), two sequences with degenerate visual features (dynamic scenes and lights turned off and on, *Deg-Vis-\**), and two sequences with degenerate geometrical features (recording only the ground plane or a wall, *Deg-Geo-\**).
 
 | Name | Description | Length [m] | Duration [s] | 
 |:-----|:------------|:---|:---|
