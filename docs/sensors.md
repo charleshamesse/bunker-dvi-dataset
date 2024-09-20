@@ -18,7 +18,7 @@ layout: home
 ## Sensor rig
 
 
-![Image](../assets/images/dvi-rig.jpg){: style="float: left; margin-right: 1em" width="33%" m}
+![Image](../assets/images/dvi-rig.jpg){: style="float: left; margin-right: 3em" width="33%" m}
 
 Our 3D-printed hand-held setup features the following sensors:
 - [Sevensense Core Research]
@@ -62,11 +62,7 @@ All image topics are compressed with the standard `image_transport` and `depth_i
 We distinguish intra-device calibration (camera intrinsics and camera-IMU extrinsics for all cameras of a single hardware device) and inter-device calibration (extrinsics relating one device's sensor to another, be it LiDAR or camera). All calibration data is provided in the form of text and yaml files.
 
 - For intra-device calibration (camera intrinsics and camera-IMU extrinsics for a single hardware device), we rely on factory calibration data and the [Kalibr] toolbox. 
-  - k4a_calibration.txt
-  - 7s_sensor_calibration.yaml
-  - d455f_calibration.yaml
 - For inter-device calibration, we use the target-less [LiDAR-camera calibration toolbox] proposed in [Koide et al. (ICRA2023)] and compute the transformation of each device's IMU to the LiDAR's coordinate frame. Users can then compute whichever transformation between all sensors of the platform.
-  - inter-device_extrinsics.yaml
 
 
 

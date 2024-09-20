@@ -23,8 +23,8 @@ layout: home
 
 We provide a survey-grade ground truth map collected with a FARO Focus laser scanner (shown in the picture on the right) in PCD format. Two versions are available:
 
-- map_gt.pcd: full map featuring 336M points and weighing 5.4GB
-- map_gt_light.pcd: downsampled map weighing 200MB.
+- The full map featuring 336M points and weighing 5.4GB
+- Two downsampled versions, weighing 456MB and 21MB.
 
 You can download the original scans via the links in the Download section and use e.g. [CloudCompare] to read the files.
 
@@ -32,14 +32,7 @@ You can download the original scans via the links in the Download section and us
 
 
 
-Following the procedure used in other SLAM datasets (MCD-VIRAL, Newer College dataset), we compute ground truth localization by registering the Livox Mid-360's point clouds to the ground truth map. We do so after de-skewing and transforming in the coordinate frame of the IMU:
-- trajectory_mid360.csv
-
-Then, we use the extrinsic calibration of the sensors to compute the trajectories of each depth camera:
-
-- trajectory_7s.csv
-- trajectory_k4a.csv
-- trajectory_d455f.csv
+Following the procedure used in other SLAM datasets ([MCD VIRAL dataset], [Newer College dataset]), we compute ground truth localization by registering the Livox Mid-360's point clouds to the ground truth map. We do so after de-skewing and transforming in the coordinate frame of the IMU. Then, we use the extrinsic calibration of the sensors to compute the trajectories of each depth-visual-inertial camera. Each trajectory is saved in a csv file.
 
 The csv files are in [TUM format], i.e. `timestamp, x, y, z, qx, qy, qz, qw`:
 
@@ -51,7 +44,7 @@ The csv files are in [TUM format], i.e. `timestamp, x, y, z, qx, qy, qz, qw`:
 1725010555.3002715 44.1915069783180 -7.47244809864874 -0.3459356312609733 -0.1184078006989503 -0.07139376452948795 0.869012047629454 -0.47507955570180843
 ```
 
-These poses follow the rate of the LiDAR scans, i.e. 10 Hz. For advanced users, we also propose SE3 B-spline trajectories using the [Ceva library], similarly to the recent [MCD Viral dataset]. The file lists the control points of the splines.
+These poses follow the rate of the LiDAR scans, i.e. 10 Hz. For advanced users, we also propose SE3 B-spline trajectories using the [Ceva library], again following the procedure from the [MCD VIRAL dataset]. The SE3 B-spline tracetory files list the control points of the splines.
 
 
 
@@ -64,6 +57,8 @@ These poses follow the rate of the LiDAR scans, i.e. 10 Hz. For advanced users, 
 
 [TUM format]: https://github.com/MichaelGrupp/evo/wiki/Formats#tum---tum-rgb-d-dataset-trajectory-format
 
-[MCD Viral dataset]: https://mcdviral.github.io/Groundtruth.html
+[MCD VIRAL dataset]: https://mcdviral.github.io/Groundtruth.html
 
 [Ceva library]: https://github.com/mcdviral/ceva
+
+[Newer College dataset]: https://ori-drs.github.io/newer-college-dataset/

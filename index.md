@@ -10,26 +10,24 @@ nav_order: 1
 
 ![Image](assets/images/whole-map-alt.jpg)
 ![Image](assets/images/rig-sample.jpg)
-*Top and middle: ground truth map. Bottom left: sample visualization of some of the RGB and depth sensor streams. Bottom, right: sensor platform.*
+*Top and middle: ground truth map. Bottom left: sample visualization of some of the RGB and depth sensor streams. Bottom right: sensor platform.*
 
 
 ## About 
-This site presents the dataset collected for our ongoing research on portable 3D mapping systems based on depth cameras. Targeting resource and time-constrained mapping operations (e.g. in the context of search-and-rescue), our sequences we include agressive motion, sequences with people moving in the field of view of the sensors as well as sequences with abrupt lighting changes.
+This site presents the dataset collected for our ongoing research on portable 3D mapping systems based on depth-visual-inertial cameras. Targeting resource and time-constrained mapping operations in adverse conditions (e.g. in the context of search-and-rescue), our sequences include agressive motion, sequences with people moving in the field of view of the sensors as well as sequences with abrupt lighting changes.
 
-Our sensor platform has an extensive set of sensors:
+Our sensor platform features an extensive set of sensors:
 - 3D LiDAR
 - Active stereo camera
 - Passive stereo camera
 - Time-of-flight camera
 - Multiple Inertial Measurement Units (IMUs)
 
-With this selection of sensors, our dataset allows the comparison of various depth sensing modalities !173for the task of 3D reconstruction in a challenging, large-scale environment. This environment aims to resemble a typical search-and-rescue operation site and is captured in a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
-
-
+With this sensor suite, our dataset allows the comparison of various depth sensing modalities for the task of 3D reconstruction in a challenging and large-scale scenario. The data was captured in a bunker-like location, resembling a typical search-and-rescue operation site. The whole environment is a large, 1600m<sup>2</sup> area made of small corridors, rooms of all sizes and shapes and various objects. 
 
 ## Authors 
 
-- Charles Hamesse<sup>1, 2</sup> (corresponding author - *firstname*.*lastname*@mil.be)
+- Charles Hamesse<sup>1, 2</sup> (corresponding author - *charles.hamesse@mil.be*)
 - Michiel Vlaminck<sup>2</sup> 
 - Hiep Luong<sup>2</sup> 
 - Rob Haelterman<sup>1</sup> 
@@ -42,11 +40,8 @@ Special thanks to Alain Vanhove, Mario Malizia and Timothée Fréville.
 
 ## Citation
 
-- BibTeX:
+This work is currently under revision. We will update the citation later on.
 
-```
-to do
-```
 
 ----
 
