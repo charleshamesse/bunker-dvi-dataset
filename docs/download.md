@@ -7,6 +7,6 @@ layout: home
 # Download
 {: .no_toc }
 
-The dataset is current hosted [here]. In the future, we will add other mirrors to download a copy of the data.
+The dataset is currently hosted [here]. In the future, we will add other mirrors to download a copy of the data.
 
 [here]: https://cloud.cylab.be/s/7PgyjbM2CBcakN5
