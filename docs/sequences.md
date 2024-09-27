@@ -66,3 +66,5 @@ These sequences are the ones used for the actual evaluation of algorithms. We pr
 | Deg-Vis-2 | Person moving, unstable lighting | 250 | 410|
 | Deg-Geo-1 | Light geometrical degeneracy | 159 | 203 |
 | Deg-Geo-2 | Strong geometrical degeneracy | 74 | 85 |
+
+> Disclaimer: These sequences are all very long and contain several areas where the odometry performance can be hindered due to the degeneracies. Therefore, the *-1 sequence might not necessarily yield better results than the *-2 with all methods.
