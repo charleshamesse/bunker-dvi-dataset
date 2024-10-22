@@ -1,0 +1,12 @@
+version: "3.5"
+
+services:
+  ruby_jekyll:
+    build:
+      context: ./
+    network_mode: host
+    volumes:
+      - .:/usr/src/app
+    stdin_open: true
+    tty: true
+    command: /bin/bash # bundle exec jekyll serve -H 0.0.0.0 -t

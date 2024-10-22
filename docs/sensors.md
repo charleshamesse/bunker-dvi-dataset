@@ -52,7 +52,7 @@ All of the rosbags in our dataset include the following topics:
 | | /k4a/depth/image_raw/compressedDepth          | sensor_msgs/CompressedImage| 15 |
 | | /k4a/points2                                  | sensor_msgs/PointCloud2    | 15 | 
 | | /k4a/imu                                      | sensor_msgs/Imu            | 400 |
-| Livox Mid360 | /livox/imu                                    | sensor_msgs/Imu           | 400 | 
+| Livox Mid-360 | /livox/imu                                    | sensor_msgs/Imu           | 400 | 
 | | /livox/lidar                                  | livox_ros_driver2/CustomMsg | 10
 
 All image topics are compressed with the standard `image_transport` and `depth_image_transport` packages. 
@@ -65,6 +65,16 @@ We distinguish intra-device calibration (camera intrinsics and camera-IMU extrin
 - For inter-device calibration, we use the target-less [LiDAR-camera calibration toolbox] proposed in [Koide et al. (ICRA2023)] and compute the transformation of each device's IMU to the LiDAR's coordinate frame. Users can then compute whichever transformation between all sensors of the platform.
 
 
+## Coordinate systems
+
+The coordinate systems of all sensors in our platform are represented in the Figure below:
+
+
+![Image](../assets/images/bunker-dvi-dataset_platform-coordinates.png){: style="float: left; margin-right: 3em" width="50%"} 
+
+Note that the position of the axis systems in the Figure is approximate; the purpose is to give insight on the relative rotation between sensors.
+
+For precise transformation, refer to the calibration files mentioned in the previous section.
 
 [Sevensense Core Research]: https://www.sevensense.ai/product/core-research
 [Intel Realsense D455F]: https://www.intelrealsense.com/depth-camera-d455f/
